@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yash - Web Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/b14a7cda91.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="header">
+    <div class="container conztae">
+      <nav>
+        <img src="images/Web True (2).png" class="logo">
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i  onclick="closemenu()" id="dono" class="fa-solid fa-xmark"></i>
+        </ul>
+        <i onclick="openmenu()" id="dono" class="fa-solid fa-bars"></i>
+      </nav>
+      <div class="header-text">
+        <p>UI/UX Designer</p>
+        <h1>Hi, I'm <span> Yash Bhatt </span><br>Passionate Web Developer</h1>
+      </div>
+    </div>
+  </div>
+<!-- -----------About----------- -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/about.png" alt="">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>I'm a skilled website developer with two years of experience, specializing in creating visually appealing and highly functional websites. With a focus on quality work and effective communication, I ensure that every project meets the unique needs of my clients. From animations to responsive design and the quality of code, I take pride in delivering top-notch websites that leave a lasting impression. Let's work together to bring your online vision to life!</p>
+        
+          <div class="tab-titles">
+            <p class="tab-links active-link " onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+          </div>
+          <div class="tab-contents active-tab " id="skills">
+            <ul>
+              <li><span>UI/UX</span><br>Design Web/App Interfaces</li>
+              <li><span>Web Development</span><br>Website Development</li>
+              <li><span>Website SEO</span><br>Building website and doing SEO</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>2021 - Current</span><br>Website Developer</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+<!-- -----------Services----------- -->
+
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <h2><i class="fa-solid fa-code"></i>Web Design</h2>
+          <p>My web design service offers tailored solutions for businesses and individuals seeking a polished online presence. With a focus on customized design, responsive layouts, and user-centric experiences, I deliver websites that combine aesthetics with functionality. Through meticulous testing and ongoing support, I ensure optimal performance and lasting impact in today's digital landscape.</p>
+          <!-- <a href="#">learn more</a> -->
+        </div>
+        <div>
+          <h2><i class="fa-solid fa-crop-simple"></i>UI/Ux Designer</h2>
+          <p>As a UI/UX designer, I specialize in creating visually stunning and user-friendly digital experiences. By prioritizing intuitive design and seamless navigation, I aim to optimize the user journey. With a deep understanding of user behavior, I craft interfaces that resonate with audiences and drive engagement. My goal is to deliver impactful designs that enhance the overall user experience.</p>
+          <!-- <a href="#">learn more</a> -->
+        </div>
+        <div>
+          <h2><i class="fa-brands fa-searchengin"></i>SEO</h2>
+          <p>Certainly! Here's how you can phrase it:
+
+            "I can help improve your website's visibility and rankings on search engines like Google by implementing effective SEO strategies tailored to your business. Through keyword research, content optimization, technical enhancements, and quality link building, I aim to drive more organic traffic to your site, ultimately boosting your online presence and potential customer base."</p>
+          <!-- <a href="#">learn more</a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- -----------Portfolio----------- -->
+
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+      <div class="work">
+        <img src="images/work-1.png" alt="">
+        <div class="layer">
+          <h3>Real Estate App</h3>
+          <p>This is a Real Estate Website landing page. Fully Responsive</p>
+          <a href="https://yashbhatt001.github.io/Estate.real/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <!-- <div class="work">
+        <img src="images/work-2.png" alt="">
+        <div class="layer">
+          <h3>Music App</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, totam et!</p>
+          <a href="#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+     </div> -->
+      <div class="work">
+        <img src="images/work-3.png" alt="">
+        <div class="layer">
+          <h3>Online Shopping App</h3>
+          <p>This is a online shopping app. It is fully responsive. I have used Html, Css and Js to make it's functionality work.</p>
+          <a href="https://yashbhatt001.github.io/E.Com/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+    </div>
+    <!-- <a href="#" class="btn">See more</a> -->
+  </div>
+</div>
+
+<!-- -----------Contact----------- -->
+<div id="contact">
+ <div class="container">
+  <div class="row">
+    <div class="contact-left">
+      <h1 class="sub-title">Contact Me</h1>
+      <p><i class="fa-solid fa-paper-plane"></i>expert.yashbhatt01@gmail.com</p>
+      <p><i class="fa-solid fa-square-phone"></i>7895224377</p>
+      <div class="social-icons">
+        <a target="_self" href=""><i class="fa-brands fa-facebook-f" ></i></a>
+        <a href="https://www.linkedin.com/in/yash-bhatt-86a93b304" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://chat.whatsapp.com/JlubPov0kdS2xl7Mlc6TsH" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        <a target="_self" href=""><i class="fa-brands fa-twitter-square" ></i></a>
+      </div>
+    </div>
+    <div class="contact-right">
+      <form name="submit-to-google-sheet">
+      <input type="text" name="Name" placeholder="Your Name" required>
+      <input type="text" name="Email" placeholder="Your Email" required>
+      <textarea name="Message"   rows="6" placeholder="Your Message" "></textarea>
+      <button type="submit" class="btn btn2">Submit</button>
+      <a href="#" download class="btn btn2 btn3">Back to top</a>
+      </form>
+      <span id="msg"></span>
+    </div>
+  </div>
+ </div>
+ <div class="copyright">
+  <p>Copyright &#169; WebTrue.  Made by <span style="color: #ff004f;"> Yash Bhatt</span></p>
+ </div>
+</div>
+
+
+  <script src="script.js"></script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyZYHcozRqSsObD16apWQNLRpAqTfHFlZtATZMZX7V_pf-b0VAQ2LxEF7zImARZerQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById('msg');  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+          msg.innerHTML = "Message  sent successfully"
+          setTimeout(() => {
+            msg.innerHTML = ""
+          }, 5000);
+          form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
